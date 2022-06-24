@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+
+.navbar {
+  min-height: 96px;
+  padding: 36px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  gap: 16px;
+
+  &--title {
+    font-family: $LogoFont;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 5px;
+  }
+}
+
+.navbar__menu--icon {
+  cursor: pointer;
+}
+
+.navbar__links--wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 96px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(29, 28, 30, 0.425);
+  transition: all 500ms ease;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 100%;
+  padding: 48px 24px;
+  background-color: #1d1c1e;
+}
+
+.navbar__link {
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu-open .navbar__links--wrapper {
+  height: 0;
+}
