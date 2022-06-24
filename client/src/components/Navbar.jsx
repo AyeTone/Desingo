@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Icon } from "../assets/shared/mobile/icon-logo.svg";
+import Logo from "../assets/shared/desktop/logo-dark.png";
 import { ReactComponent as HamBurger } from "../assets/shared/mobile/icon-hamburger.svg";
 import { ReactComponent as Close } from "../assets/shared/mobile/icon-close.svg";
 import { Link } from "react-router-dom";
@@ -18,10 +18,9 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <div className="navbar__logo">
-        <Icon />
-        <h1 className="navbar__logo--title">DESIGNO</h1>
-      </div>
+      <figure className="navbar__logo--wrapper">
+        <img className="navbar__logo" src={Logo} alt="" />
+      </figure>
       <div className={`navbar__menu ${!menuOpen ? "menu-open" : ""}`}>
         {!menuOpen ? (
           <HamBurger className="navbar__menu--icon" onClick={toggleMenu} />
