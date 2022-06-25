@@ -22,7 +22,7 @@
   position: absolute;
   top: 96px;
   left: 0;
-  height: 100%;
+  height: 0;
   width: 100%;
   z-index: 3;
 
@@ -45,8 +45,4 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-}
-
-.menu-open .navbar__links--wrapper {
-  height: 0;
 }

@@ -11,8 +11,10 @@ const Navbar = () => {
   function toggleMenu() {
     if (menuOpen) {
       setMenuOpen(false);
+      document.body.classList.remove("menu-open");
     } else {
       setMenuOpen(true);
+      document.body.classList += " menu-open";
     }
   }
 
@@ -21,7 +23,7 @@ const Navbar = () => {
       <figure className="navbar__logo--wrapper">
         <img className="navbar__logo" src={Logo} alt="" />
       </figure>
-      <div className={`navbar__menu ${!menuOpen ? "menu-open" : ""}`}>
+      <div className="navbar__menu">
         {!menuOpen ? (
           <HamBurger className="navbar__menu--icon" onClick={toggleMenu} />
         ) : (

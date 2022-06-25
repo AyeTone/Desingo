@@ -4,3 +4,12 @@ body {
   font-family: $baseFont;
   color: $fontColor;
 }
+
+.menu-open {
+  max-height: 100vh;
+  overflow-y: hidden;
+
+  .navbar__links--wrapper {
+    height: 100%;
+  }
+}
