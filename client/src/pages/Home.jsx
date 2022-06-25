@@ -1,10 +1,11 @@
 import React from "react";
-import { Hero } from "../components";
+import { Hero, ProjectLinks } from "../components";
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <ProjectLinks />
     </div>
   );
 };

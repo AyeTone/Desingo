@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as *;
+
+.project-links {
+  margin: 120px auto;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-link {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project-link__img--wrapper {
+  min-width: 327px;
+  height: 250px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.project-link__content--bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.499);
+}
+
+.project-link__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  color: white;
+  text-align: center;
+
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+  }
+}
