@@ -7,6 +7,7 @@ import Photon from "../assets/web-design/desktop/image-photon.jpg";
 import Builder from "../assets/web-design/desktop/image-builder.jpg";
 import Blogr from "../assets/web-design/desktop/image-blogr.jpg";
 import Camp from "../assets/web-design/desktop/image-camp.jpg";
+import { ProjectLinks } from "../components";
 
 const WebDesign = () => {
   return (
@@ -48,6 +49,7 @@ const WebDesign = () => {
           desc="Get expert training in coding, data, design, and digital marketing"
         />
       </section>
+      <ProjectLinks isWeb={true} />
     </main>
   );
 };
