@@ -12,6 +12,7 @@
   text-align: center;
   background-color: $mainBg;
   color: white;
+  padding: 0 24px;
 
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 36px;
+    margin-bottom: 24px;
   }
 
   &--desc {
