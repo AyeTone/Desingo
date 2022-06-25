@@ -7,6 +7,7 @@ const Home = () => {
       <Hero />
       <ProjectLinks />
       <Details />
+      <CallToAction />
     </main>
   );
 };
