@@ -2,6 +2,8 @@
 
 .project-list {
   padding: 96px 24px;
+  display: grid;
+  gap: 40px;
 }
 
 .project {
@@ -15,7 +17,7 @@
   text-align: center;
 
   &--title {
-    color: $mainBg;
+    color: rgba(231, 129, 107, 1);
     margin-bottom: 16px;
     font-size: 20px;
     line-height: 26px;
