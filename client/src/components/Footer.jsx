@@ -5,15 +5,18 @@ import { ReactComponent as Instagram } from "../assets/shared/desktop/icon-insta
 import { ReactComponent as Pinterest } from "../assets/shared/desktop/icon-pinterest.svg";
 import { ReactComponent as Twitter } from "../assets/shared/desktop/icon-twitter.svg";
 import { ReactComponent as Youtube } from "../assets/shared/desktop/icon-youtube.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__content--top">
-          <figure className="footer__img--wrapper">
-            <img src={Logo} alt="" />
-          </figure>
+          <Link to="/">
+            <figure className="footer__img--wrapper">
+              <img src={Logo} alt="" />
+            </figure>
+          </Link>
           <div className="footer__links">
             <p>OUR COMPANY</p>
             <p>LOCATIONS</p>

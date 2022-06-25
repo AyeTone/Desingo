@@ -3,11 +3,12 @@ import Web from "../assets/home/mobile/image-web-design.jpg";
 import App from "../assets/home/mobile/image-app-design.jpg";
 import Graphic from "../assets/home/mobile/image-graphic-design.jpg";
 import { ReactComponent as RightArrow } from "../assets/shared/desktop/icon-right-arrow.svg";
+import { Link } from "react-router-dom";
 
 const ProjectLinks = () => {
   return (
     <section className="project-links">
-      <div className="project-link">
+      <Link to="/webdesign" className="project-link">
         <figure className="project-link__img--wrapper">
           <img src={Web} alt="" />
           <div className="project-link__content--bg">
@@ -19,7 +20,7 @@ const ProjectLinks = () => {
             </div>
           </div>
         </figure>
-      </div>
+      </Link>
       <div className="project-link">
         <figure className="project-link__img--wrapper">
           <img src={App} alt="" />

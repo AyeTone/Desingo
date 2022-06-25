@@ -1,5 +1,5 @@
 import React from "react";
-import { CallToAction, Details, Hero, ProjectLinks } from "../components";
+import { Details, Hero, ProjectLinks } from "../components";
 
 const Home = () => {
   return (
@@ -7,7 +7,6 @@ const Home = () => {
       <Hero />
       <ProjectLinks />
       <Details />
-      <CallToAction />
     </main>
   );
 };
