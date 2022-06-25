@@ -24,7 +24,7 @@ const ProjectLinks = ({ isWeb, isApp, isGraphic }) => {
         </Link>
       )}
       {!isApp && (
-        <Link to="" className="project-link">
+        <Link to="/appdesign" className="project-link">
           <figure className="project-link__img--wrapper">
             <img src={App} alt="" />
             <div className="project-link__content--bg">
@@ -39,7 +39,7 @@ const ProjectLinks = ({ isWeb, isApp, isGraphic }) => {
         </Link>
       )}
       {!isGraphic && (
-        <Link to="" className="project-link">
+        <Link to="/graphicdesign" className="project-link">
           <figure className="project-link__img--wrapper">
             <img src={Graphic} alt="" />
             <div className="project-link__content--bg">

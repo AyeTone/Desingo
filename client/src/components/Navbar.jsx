@@ -20,9 +20,11 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <figure className="navbar__logo--wrapper">
-        <img className="navbar__logo" src={Logo} alt="" />
-      </figure>
+      <Link to="/">
+        <figure className="navbar__logo--wrapper">
+          <img className="navbar__logo" src={Logo} alt="" />
+        </figure>
+      </Link>
       <div className="navbar__menu">
         {!menuOpen ? (
           <HamBurger className="navbar__menu--icon" onClick={toggleMenu} />
@@ -31,9 +33,15 @@ const Navbar = () => {
         )}
         <div className="navbar__links--wrapper">
           <ul className="navbar__links">
-            <li className="navbar__link">Our Company</li>
-            <li className="navbar__link">Locations</li>
-            <li className="navbar__link">Contact</li>
+            <Link to="/about" onClick={toggleMenu}>
+              <li className="navbar__link">Our Company</li>
+            </Link>
+            <Link to="/locations" onClick={toggleMenu}>
+              <li className="navbar__link">Locations</li>
+            </Link>
+            <Link to="/contact" onClick={toggleMenu}>
+              <li className="navbar__link">Contact</li>
+            </Link>
           </ul>
         </div>
       </div>

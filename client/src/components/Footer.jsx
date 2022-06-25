@@ -18,9 +18,9 @@ const Footer = () => {
             </figure>
           </Link>
           <div className="footer__links">
-            <p>OUR COMPANY</p>
-            <p>LOCATIONS</p>
-            <p>CONTACT</p>
+            <Link to="/about">OUR COMPANY</Link>
+            <Link to="/locations">LOCATIONS</Link>
+            <Link to="/contact">CONTACT</Link>
           </div>
         </div>
         <div className="footer__contacts">

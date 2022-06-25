@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Background } from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import Phone from "../assets/home/mobile/image-phone.png";
 
@@ -16,7 +17,9 @@ const Hero = () => {
             responsive websites, app design, and engaging brand experiences.
             Find out more about our servies.
           </p>
-          <button className="hero__content--btn">Learn More</button>
+          <Link to="/about">
+            <button className="hero__content--btn">Learn More</button>
+          </Link>
         </div>
         <figure className="hero__phone--wrapper">
           <img className="hero__phone" src={Phone} alt="" />
