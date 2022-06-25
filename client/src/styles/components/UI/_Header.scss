@@ -5,10 +5,12 @@
 }
 
 .header__content {
-  background-color: $mainBg;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   text-align: center;
+  background-color: $mainBg;
   color: white;
 
   display: flex;
@@ -27,4 +29,10 @@
     font-size: 15px;
     line-height: 25px;
   }
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
