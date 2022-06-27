@@ -3,7 +3,7 @@ import { Details, Hero, ProjectLinks } from "../components";
 
 const Home = () => {
   return (
-    <main>
+    <main className="home">
       <Hero />
       <ProjectLinks />
       <Details />
