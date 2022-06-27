@@ -1,0 +1,17 @@
+@use "../utils/breakpoints" as *;
+
+.app-design > *:not(:first-child) {
+  padding: 0 24px;
+}
+
+/* 
+
+        Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .app-design > * {
+    padding: 0 40px !important;
+  }
+}

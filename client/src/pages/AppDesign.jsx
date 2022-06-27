@@ -9,7 +9,7 @@ import Todo from "../assets/app-design/desktop/image-todo.jpg";
 
 const AppDesign = () => {
   return (
-    <main>
+    <main className="app-design">
       <Header
         title="App Design"
         desc="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."

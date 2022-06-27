@@ -7,7 +7,7 @@ import Science from "../assets/graphic-design/desktop/image-science.jpg";
 
 const GraphicDesign = () => {
   return (
-    <main>
+    <main className="graphic-design">
       <Header
         title="Graphic Design"
         desc="We deliver eye-catching branding materials that are tailored to meet your business objectives."
