@@ -21,9 +21,15 @@ const Footer = () => {
             <img src={Logo} alt="" />
           </figure>
           <div className="footer__links">
-            <Link to="/about">OUR COMPANY</Link>
-            <Link to="/locations">LOCATIONS</Link>
-            <Link to="/contact">CONTACT</Link>
+            <Link className="footer__link" to="/about">
+              OUR COMPANY
+            </Link>
+            <Link className="footer__link" to="/locations">
+              LOCATIONS
+            </Link>
+            <Link className="footer__link" to="/contact">
+              CONTACT
+            </Link>
           </div>
         </div>
         <div className="footer__contacts">
@@ -41,11 +47,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="footer__contact--socials">
-            <Facebook />
-            <Youtube />
-            <Twitter />
-            <Pinterest />
-            <Instagram />
+            <Facebook className="footer__icon" />
+            <Youtube className="footer__icon" />
+            <Twitter className="footer__icon" />
+            <Pinterest className="footer__icon" />
+            <Instagram className="footer__icon" />
           </div>
         </div>
       </div>

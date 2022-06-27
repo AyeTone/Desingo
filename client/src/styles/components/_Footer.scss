@@ -109,3 +109,23 @@
     }
   }
 }
+
+.footer__icon > path {
+  transition: all 300ms ease;
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+
+  .footer__icon:hover > path {
+    fill: $hover;
+  }
+}
