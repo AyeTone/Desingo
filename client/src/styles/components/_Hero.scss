@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../utils/breakpoints" as *;
 
 .hero {
   max-height: 843px;
@@ -64,5 +65,39 @@
 }
 
 .hero__phone {
-  transform: translateY(-28px);
+  background-image: url("assets/home/mobile/image-phone.png");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 
+
+      Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .hero__wrapper {
+    border-radius: 15px;
+    padding: 0 48px;
+  }
+
+  .hero__content {
+    &--title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &--para {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
 }

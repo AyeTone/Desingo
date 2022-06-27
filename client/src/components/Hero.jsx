@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Background } from "../assets/home/desktop/bg-pattern-hero-home.svg";
-import Phone from "../assets/home/mobile/image-phone.png";
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
           </Link>
         </div>
         <figure className="hero__phone--wrapper">
-          <img className="hero__phone" src={Phone} alt="" />
+          <div className="hero__phone"></div>
         </figure>
       </div>
     </section>
