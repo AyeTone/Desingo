@@ -9,6 +9,7 @@
 
 /* Pages */
 @use "./pages/About";
+@use "./pages/Locations";
 
 /* Components */
 @use "./components/Navbar";
@@ -23,6 +24,7 @@
 @use "./components/UI/Project";
 @use "./components/UI/SvgImage";
 @use "./components/UI/Sites";
+@use "./components/UI/MappedLocation";
 
 /* utils */
 @use "./utils/breakpoints";

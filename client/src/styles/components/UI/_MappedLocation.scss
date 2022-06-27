@@ -1,0 +1,48 @@
+@use "../../abstracts/variables" as *;
+
+.mapped-location__img--wrapper {
+  max-height: 320px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.mapped-location__content {
+  position: relative;
+  height: 394px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: $projectsBg;
+  overflow: hidden;
+
+  text-align: center;
+
+  &--bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--title {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    line-height: 36px;
+    color: $mainBg;
+  }
+
+  &--desc {
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 25px;
+
+    h3 {
+      font-weight: 700;
+    }
+  }
+}

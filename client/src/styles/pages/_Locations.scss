@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+.locations__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
