@@ -1,10 +1,20 @@
 @use "../abstracts/variables" as *;
+@use "../utils/breakpoints" as *;
+
+@mixin Bgimg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .project-links {
   padding: 0 24px;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -12,15 +22,22 @@
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  width: 100%;
+  height: 250px;
 }
 
-.project-link__img--wrapper {
-  min-width: 327px;
-  height: 250px;
+.project-link__img--web {
+  @include Bgimg;
+  background-image: url("assets/home/mobile/image-web-design.jpg");
+}
 
-  img {
-    object-fit: cover;
-  }
+.project-link__img--app {
+  @include Bgimg;
+  background-image: url("assets/home/mobile/image-app-design.jpg");
+}
+.project-link__img--graphic {
+  @include Bgimg;
+  background-image: url("assets/home/mobile/image-graphic-design.jpg");
 }
 
 .project-link__content--bg {
@@ -56,5 +73,40 @@
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 5px;
+  }
+}
+
+/* 
+
+      Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .project-link__img--web {
+    background-image: url("assets/home/tablet/image-web-design.jpg");
+  }
+
+  .project-link__img--app {
+    background-image: url("assets/home/tablet/image-app-design.jpg");
+  }
+
+  .project-link__img--graphic {
+    background-image: url("assets/home/tablet/image-graphic-design.jpg");
+  }
+
+  .project-link__content {
+    gap: 24px;
+
+    h3 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 22px;
+    }
   }
 }
