@@ -15,3 +15,15 @@
     padding: 0 40px !important;
   }
 }
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .app-design > * {
+    padding: 0 124px !important;
+  }
+}
