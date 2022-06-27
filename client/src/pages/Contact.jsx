@@ -9,7 +9,7 @@ const Contact = () => {
   }
 
   return (
-    <main>
+    <main className="contact">
       <div className="contact__content">
         <div className="contact__content--wrapper">
           <h2 className="contact__content--header">Contact Us</h2>
@@ -38,8 +38,7 @@ const Contact = () => {
             <textarea
               className="contact__form--input"
               placeholder="Your Message"
-              cols="30"
-              rows="10"
+              rows="7"
             ></textarea>
             <button className="contact__form--submit">Submit</button>
           </form>
