@@ -1,0 +1,11 @@
+@use "../utils/breakpoints" as *;
+
+.web-design > *:not(:first-child) {
+  padding: 0 24px;
+}
+
+@include breakpoint(tablet) {
+  .web-design > * {
+    padding: 0 40px !important;
+  }
+}

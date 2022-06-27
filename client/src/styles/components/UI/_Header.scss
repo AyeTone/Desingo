@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as *;
+@use "../../utils/breakpoints" as *;
 
 .header {
   height: 320px;
@@ -37,4 +38,17 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* 
+
+      Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .header__content {
+    border-radius: 8px;
+    overflow: hidden;
+  }
 }
