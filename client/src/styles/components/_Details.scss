@@ -47,7 +47,10 @@
   .details {
     gap: 40px;
   }
+
   .details__section {
+    text-align: left;
     flex-direction: row;
+    gap: 48px;
   }
 }
