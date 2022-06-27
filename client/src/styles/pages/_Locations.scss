@@ -1,7 +1,52 @@
 @use "../abstracts/variables" as *;
+@use "../utils/breakpoints" as *;
+
+@mixin Bgimg {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .locations__wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.locations__location {
+  &--canada {
+    @include Bgimg;
+    background-image: url("assets/locations/desktop/image-map-canada.png");
+  }
+  &--australia {
+    @include Bgimg;
+    background-image: url("assets/locations/desktop/image-map-australia.png");
+  }
+  &--united {
+    @include Bgimg;
+    background-image: url("assets/locations/desktop/image-map-united-kingdom.png");
+  }
+}
+
+/* 
+
+    Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .locations {
+    padding: 0 40px;
+  }
+
+  .locations__location {
+    display: grid;
+    gap: 32px;
+
+    > * {
+      border-radius: 15px;
+    }
+  }
 }
