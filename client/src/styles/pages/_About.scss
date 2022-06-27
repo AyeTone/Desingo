@@ -1,9 +1,11 @@
 @use "../abstracts/variables" as *;
+@use "../utils/breakpoints" as *;
 
 @mixin text {
   position: relative;
   overflow: hidden;
-  padding: 0 24px;
+  padding: 80px 24px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -11,11 +13,25 @@
   align-items: center;
 
   text-align: center;
+
+  @include breakpoint(tablet) {
+    padding: 64px 58px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+@mixin Bgimg {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about__about-us {
   @include text;
-  height: 396px;
+
   background-color: $mainBg;
   color: white;
 
@@ -48,7 +64,6 @@
 .about__world-class {
   @include text;
   background-color: rgba(253, 243, 240, 1);
-  height: 545px;
 
   &--title {
     color: $mainBg;
@@ -62,5 +77,60 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
+  }
+}
+
+.about__img {
+  overflow: hidden;
+
+  &--about {
+    @include Bgimg;
+    background-image: url("assets/about/mobile/image-about-hero.jpg");
+  }
+
+  &--world {
+    @include Bgimg;
+    background-image: url("assets/about/mobile/image-world-class-talent.jpg");
+  }
+
+  &--real {
+    @include Bgimg;
+    background-image: url("assets/about/mobile/image-real-deal.jpg");
+  }
+}
+
+/* 
+
+    Tablet BP
+
+*/
+
+@include breakpoint(tablet) {
+  .about {
+    display: grid;
+    gap: 120px;
+
+    > * {
+      padding: 0px 40px;
+    }
+  }
+
+  .about__img--wrapper {
+    border-top-left-radius: 15px;
+  }
+
+  .about__img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    &--about {
+      background-image: url("assets/about/tablet/image-about-hero.jpg");
+    }
+    &--world {
+      background-image: url("assets/about/tablet/image-world-class-talent.jpg");
+    }
+    &--real {
+      background-image: url("assets/about/tablet/image-real-deal.jpg");
+    }
   }
 }

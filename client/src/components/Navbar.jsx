@@ -47,13 +47,13 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar__links navbar__tablet">
-        <Link to="/about" onClick={toggleMenu}>
+        <Link to="/about">
           <li className="navbar__link">Our Company</li>
         </Link>
-        <Link to="/locations" onClick={toggleMenu}>
+        <Link to="/locations">
           <li className="navbar__link">Locations</li>
         </Link>
-        <Link to="/contact" onClick={toggleMenu}>
+        <Link to="/contact">
           <li className="navbar__link">Contact</li>
         </Link>
       </ul>
