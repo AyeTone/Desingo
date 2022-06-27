@@ -5,18 +5,21 @@ import { ReactComponent as Instagram } from "../assets/shared/desktop/icon-insta
 import { ReactComponent as Pinterest } from "../assets/shared/desktop/icon-pinterest.svg";
 import { ReactComponent as Twitter } from "../assets/shared/desktop/icon-twitter.svg";
 import { ReactComponent as Youtube } from "../assets/shared/desktop/icon-youtube.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__content--top">
-          <Link to="/">
-            <figure className="footer__img--wrapper">
-              <img src={Logo} alt="" />
-            </figure>
-          </Link>
+          <figure
+            onClick={() => navigate("/")}
+            className="footer__img--wrapper"
+          >
+            <img src={Logo} alt="" />
+          </figure>
           <div className="footer__links">
             <Link to="/about">OUR COMPANY</Link>
             <Link to="/locations">LOCATIONS</Link>
