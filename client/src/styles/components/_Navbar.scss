@@ -80,3 +80,15 @@
     line-height: 14px;
   }
 }
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .navbar__link:hover {
+    text-decoration: underline;
+  }
+}
