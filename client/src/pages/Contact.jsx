@@ -1,7 +1,54 @@
 import React from "react";
+import { Sites } from "../components/UI";
+import { ReactComponent as Background } from "../assets/shared/desktop/bg-pattern-two-circles.svg";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  function deny(e) {
+    e.preventDefault();
+    alert("This is not a real company. Your message will not be sent.");
+  }
+
+  return (
+    <main>
+      <div className="contact__content">
+        <div className="contact__content--wrapper">
+          <h2 className="contact__content--header">Contact Us</h2>
+          <p className="contact__content--para">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+          <form className="contact__form" onSubmit={(e) => deny(e)}>
+            <input
+              className="contact__form--input"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              className="contact__form--input"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              className="contact__form--input"
+              type="tel"
+              placeholder="Phone"
+            />
+            <textarea
+              className="contact__form--input"
+              placeholder="Your Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button className="contact__form--submit">Submit</button>
+          </form>
+        </div>
+        <Background className="contact__content--bg" />
+      </div>
+      <Sites />
+    </main>
+  );
 };
 
 export default Contact;

@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as *;
+
+.contact__content {
+  position: relative;
+  overflow: hidden;
+
+  background-color: $mainBg;
+  color: white;
+
+  &--wrapper {
+    padding: 74px 24px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  &--bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--header {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  &--para {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &--input {
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 26px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.57);
+    background-color: transparent;
+    resize: none;
+
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &--submit {
+    padding: 18px 48px;
+    margin-top: 38px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+  }
+}
