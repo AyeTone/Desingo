@@ -1,0 +1,24 @@
+@use "../../abstracts/variables" as *;
+
+.svg-image {
+  text-align: center;
+  position: relative;
+  width: max-content;
+}
+
+.svg-image__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.svg-image__title {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

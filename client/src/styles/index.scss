@@ -7,6 +7,9 @@
 /* Base */
 @use "./base/body";
 
+/* Pages */
+@use "./pages/About";
+
 /* Components */
 @use "./components/Navbar";
 @use "./components/Hero";
@@ -15,9 +18,11 @@
 @use "./components/CallToAction";
 @use "./components/Footer";
 
-// UI
+//  UI
 @use "./components/UI/Header";
 @use "./components/UI/Project";
+@use "./components/UI/SvgImage";
+@use "./components/UI/Sites";
 
 /* utils */
 @use "./utils/breakpoints";

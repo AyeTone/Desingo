@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as *;
+
+@mixin text {
+  position: relative;
+  overflow: hidden;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.about__about-us {
+  @include text;
+  height: 396px;
+  background-color: $mainBg;
+  color: white;
+
+  &--title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  &--para {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.about__about-us--content {
+  position: relative;
+  z-index: 2;
+}
+
+.about__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.about__world-class {
+  @include text;
+  background-color: rgba(253, 243, 240, 1);
+  height: 545px;
+
+  &--title {
+    color: $mainBg;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &--para {
+    margin: 24px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
