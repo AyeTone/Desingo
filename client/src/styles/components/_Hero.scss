@@ -61,6 +61,8 @@
 }
 
 .hero__phone--wrapper {
+  position: relative;
+  z-index: 2;
   width: 100%;
   overflow: hidden;
 }
@@ -96,5 +98,26 @@
       font-size: 16px;
       line-height: 26px;
     }
+  }
+}
+
+/* 
+
+    Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .hero__wrapper {
+    display: flex;
+    text-align: left;
+  }
+
+  .hero__content--btn:hover {
+    background-color: $hover;
+  }
+
+  .hero__phone {
+    background-position: bottom;
   }
 }
