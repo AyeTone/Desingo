@@ -50,5 +50,24 @@
   .header__content {
     border-radius: 8px;
     overflow: hidden;
+
+    &--desc {
+      width: 35%;
+    }
+  }
+}
+
+/* 
+
+    Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .header__content {
+    &--title {
+      font-size: 48px;
+      line-height: 48px;
+    }
   }
 }

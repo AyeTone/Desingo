@@ -4,8 +4,26 @@
   padding: 0 24px;
 }
 
+/* 
+
+      Tablet BP
+
+*/
+
 @include breakpoint(tablet) {
   .web-design > * {
     padding: 0 40px !important;
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .web-design > * {
+    padding: 0 124px !important;
   }
 }

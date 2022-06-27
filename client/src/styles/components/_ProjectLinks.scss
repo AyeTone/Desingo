@@ -125,11 +125,14 @@
   .project-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 
     > *:not(:first-child) {
       grid-column: 2;
     }
+  }
+
+  .project-links__desktop {
+    grid-template-rows: 1fr 1fr;
   }
 
   .project-link__img--web {

@@ -7,7 +7,9 @@ const ProjectLinks = (props) => {
   const navigate = useNavigate();
 
   return (
-    <section className="project-links">
+    <section
+      className={`project-links ${isHome ? "project-links__desktop" : ""} `}
+    >
       {!isWeb && (
         <figure
           onClick={() => navigate("/webdesign")}

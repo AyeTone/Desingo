@@ -16,6 +16,7 @@
   background-color: $projectsBg;
   padding: 40px 28px;
   text-align: center;
+  transition: all 300ms ease;
 
   &--title {
     color: rgba(231, 129, 107, 1);
@@ -56,5 +57,39 @@
 
   .project__img--wrapper {
     max-width: 339px;
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .project {
+    flex-direction: column;
+    max-height: unset;
+  }
+
+  .project__img--wrapper {
+    max-width: unset;
+  }
+
+  .project__content {
+    &:hover {
+      color: white;
+      background-color: $hover;
+      cursor: no-drop;
+
+      .project__content--title {
+        color: white;
+      }
+    }
   }
 }

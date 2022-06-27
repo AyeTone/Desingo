@@ -14,8 +14,8 @@ const WebDesign = () => {
     <main className="web-design">
       <Header
         title="Web Design"
-        desc="We build websites that serve as powerful marketing tools
-      and bring memorable brnad experiences."
+        desc="We build websites that serve as powerful marketing tools 
+        and bring memorable brand experiences."
       />
       <section className="project-list">
         <Project
