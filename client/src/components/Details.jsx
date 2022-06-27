@@ -20,7 +20,7 @@ const Details = () => {
         </div>
       </div>
       <div className="details__section">
-        <SvgImage svg={<Resourceful />} title="Resourceful" />
+        <SvgImage svg={<Resourceful />} />
         <div>
           <h3 className="details__section--title">Resourceful</h3>
           <p className="details__section--para">
@@ -31,7 +31,7 @@ const Details = () => {
         </div>
       </div>
       <div className="details__section">
-        <SvgImage svg={<Friendly />} title="friendly" />
+        <SvgImage svg={<Friendly />} />
         <div>
           <h3 className="details__section--title">Friendly</h3>
           <p className="details__section--para last">

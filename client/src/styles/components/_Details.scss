@@ -52,5 +52,35 @@
     text-align: left;
     flex-direction: row;
     gap: 48px;
+
+    &--para {
+      font-size: 16px;
+      line-height: 26px;
+
+      &:not(.last) {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .details {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .details__section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
