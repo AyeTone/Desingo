@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main className="home">
       <Hero />
-      <ProjectLinks />
+      <ProjectLinks isHome={true} />
       <Details />
     </main>
   );

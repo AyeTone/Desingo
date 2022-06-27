@@ -2,13 +2,17 @@ import React from "react";
 import { ReactComponent as RightArrow } from "../assets/shared/desktop/icon-right-arrow.svg";
 import { useNavigate } from "react-router-dom";
 
-const ProjectLinks = ({ isWeb, isApp, isGraphic }) => {
+const ProjectLinks = (props) => {
+  const { isWeb, isApp, isGraphic, isHome } = props;
   const navigate = useNavigate();
 
   return (
     <section className="project-links">
       {!isWeb && (
-        <figure onClick={() => navigate("/webdesign")} className="project-link">
+        <figure
+          onClick={() => navigate("/webdesign")}
+          className={`project-link ${isHome ? "project-link__desktop" : ""}`}
+        >
           <div className="project-link__img--web"></div>
           <div className="project-link__content--bg">
             <div className="project-link__content">
