@@ -45,6 +45,18 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
+      <ul className="navbar__links navbar__tablet">
+        <Link to="/about" onClick={toggleMenu}>
+          <li className="navbar__link">Our Company</li>
+        </Link>
+        <Link to="/locations" onClick={toggleMenu}>
+          <li className="navbar__link">Locations</li>
+        </Link>
+        <Link to="/contact" onClick={toggleMenu}>
+          <li className="navbar__link">Contact</li>
+        </Link>
+      </ul>
     </section>
   );
 };

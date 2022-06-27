@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../utils/breakpoints" as *;
 
 .navbar {
   min-height: 96px;
@@ -45,4 +46,37 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
+}
+
+/* 
+
+      Tablet BP
+
+*/
+
+.navbar__tablet {
+  display: none;
+}
+
+@include breakpoint(tablet) {
+  .navbar__tablet {
+    display: flex;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__links {
+    flex-direction: row;
+    width: unset;
+    padding: unset;
+    background-color: unset;
+  }
+
+  .navbar__link {
+    color: $blackText;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
