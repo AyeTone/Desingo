@@ -4,8 +4,10 @@ import { ReactComponent as Background } from "../../assets/shared/desktop/bg-pat
 const SvgImage = ({ svg, title }) => {
   return (
     <div className="svg-image">
-      {svg}
-      <Background className="svg-image__bg" />
+      <div className="svg-image__icon--wrapper">
+        {svg}
+        <Background className="svg-image__bg" />
+      </div>
       <h3 className="svg-image__title">{title}</h3>
     </div>
   );

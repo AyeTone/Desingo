@@ -2,8 +2,12 @@
 
 .svg-image {
   text-align: center;
+}
+
+.svg-image__icon--wrapper {
   position: relative;
   width: max-content;
+  margin: 0 auto;
 }
 
 .svg-image__bg {

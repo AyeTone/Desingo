@@ -8,3 +8,21 @@
   align-items: center;
   gap: 48px;
 }
+
+.sites__country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sites__btn {
+  padding: 18px;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $mainBg;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
