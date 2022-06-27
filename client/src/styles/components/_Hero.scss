@@ -49,6 +49,7 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 300ms ease;
 
     font-size: 15px;
     line-height: 22px;
@@ -115,6 +116,7 @@
 
   .hero__content--btn:hover {
     background-color: $hover;
+    color: white;
   }
 
   .hero__phone {

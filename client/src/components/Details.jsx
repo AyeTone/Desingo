@@ -2,7 +2,6 @@ import React from "react";
 import { ReactComponent as Passionate } from "../assets/home/desktop/illustration-passionate.svg";
 import { ReactComponent as Resourceful } from "../assets/home/desktop/illustration-resourceful.svg";
 import { ReactComponent as Friendly } from "../assets/home/desktop/illustration-friendly.svg";
-import { ReactComponent as Background } from "../assets/shared/desktop/bg-pattern-small-circle.svg";
 import SvgImage from "./UI/SvgImage";
 
 const Details = () => {

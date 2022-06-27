@@ -17,13 +17,13 @@ const CallToAction = () => {
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </p>
-          <button
-            onClick={() => navigate("/contact")}
-            className="call-to-action__content--btn"
-          >
-            Get in touch
-          </button>
         </div>
+        <button
+          onClick={() => navigate("/contact")}
+          className="call-to-action__content--btn"
+        >
+          Get in touch
+        </button>
       </div>
     </section>
   );
