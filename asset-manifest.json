@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Desingo/static/css/main.9ad0a3af.css",
-    "main.js": "/Desingo/static/js/main.b853e37f.js",
+    "main.js": "/Desingo/static/js/main.1d691432.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Desingo/static/js/787.c4e7f8f9.chunk.js",
     "static/media/image-phone.png": "/Desingo/static/media/image-phone.a3db0f80dbdbd6eaa6c1.png",
     "static/media/image-change.jpg": "/Desingo/static/media/image-change.3051c97c1dcc2c751755.jpg",
@@ -52,11 +52,11 @@
     "static/media/icon-hamburger.svg": "/Desingo/static/media/icon-hamburger.a39ae0d1f45acff97a9650b13149528e.svg",
     "static/media/icon-right-arrow.svg": "/Desingo/static/media/icon-right-arrow.7046cd1b7a4a6072a89674a25348f942.svg",
     "main.9ad0a3af.css.map": "/Desingo/static/css/main.9ad0a3af.css.map",
-    "main.b853e37f.js.map": "/Desingo/static/js/main.b853e37f.js.map",
+    "main.1d691432.js.map": "/Desingo/static/js/main.1d691432.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Desingo/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ad0a3af.css",
-    "static/js/main.b853e37f.js"
+    "static/js/main.1d691432.js"
   ]
 }
