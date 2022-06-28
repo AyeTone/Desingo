@@ -3,14 +3,7 @@
 
 .mapped-location {
   width: 100%;
-}
-
-.mapped-location__img--wrapper {
-  max-height: 320px;
-
-  img {
-    object-fit: cover;
-  }
+  height: 100%;
 }
 
 .mapped-location__content {
@@ -81,5 +74,20 @@
 
   .mapped-location__bottom {
     flex-direction: row;
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .mapped-location__content {
+    &--title {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 }
