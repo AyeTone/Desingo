@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Designo/static/css/main.fa1e14f7.css",
-    "main.js": "/Designo/static/js/main.8bdefc3f.js",
+    "main.css": "/Designo/static/css/main.d0c4b782.css",
+    "main.js": "/Designo/static/js/main.d50d94c5.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Designo/static/js/787.c4e7f8f9.chunk.js",
     "static/media/image-phone.png": "/Designo/static/media/image-phone.a3db0f80dbdbd6eaa6c1.png",
     "static/media/image-change.jpg": "/Designo/static/media/image-change.3051c97c1dcc2c751755.jpg",
@@ -51,12 +51,12 @@
     "static/media/icon-close.svg": "/Designo/static/media/icon-close.010e2d539cf842b96ceecdf4f54cb482.svg",
     "static/media/icon-hamburger.svg": "/Designo/static/media/icon-hamburger.a39ae0d1f45acff97a9650b13149528e.svg",
     "static/media/icon-right-arrow.svg": "/Designo/static/media/icon-right-arrow.7046cd1b7a4a6072a89674a25348f942.svg",
-    "main.fa1e14f7.css.map": "/Designo/static/css/main.fa1e14f7.css.map",
-    "main.8bdefc3f.js.map": "/Designo/static/js/main.8bdefc3f.js.map",
+    "main.d0c4b782.css.map": "/Designo/static/css/main.d0c4b782.css.map",
+    "main.d50d94c5.js.map": "/Designo/static/js/main.d50d94c5.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Designo/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa1e14f7.css",
-    "static/js/main.8bdefc3f.js"
+    "static/css/main.d0c4b782.css",
+    "static/js/main.d50d94c5.js"
   ]
 }
