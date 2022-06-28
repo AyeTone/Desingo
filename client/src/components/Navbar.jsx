@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <Link to="/">
+      <Link to="/Designo/">
         <figure className="navbar__logo--wrapper">
           <img className="navbar__logo" src={Logo} alt="" />
         </figure>

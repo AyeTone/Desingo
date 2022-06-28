@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer__content">
         <div className="footer__content--top">
           <figure
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/Designo/")}
             className="footer__img--wrapper"
           >
             <img src={Logo} alt="" />

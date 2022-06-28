@@ -25,12 +25,16 @@ const Contact = () => {
             <input
               className="contact__form--input"
               type="text"
+              name="name"
               placeholder="Name"
+              required
             />
             <input
               className="contact__form--input"
+              name="email"
               type="email"
               placeholder="Email"
+              required
             />
             <input
               className="contact__form--input"
@@ -40,6 +44,7 @@ const Contact = () => {
             <textarea
               className="contact__form--input"
               placeholder="Your Message"
+              name="message"
               rows="5"
             ></textarea>
             <button className="contact__form--submit">Submit</button>
