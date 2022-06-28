@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as *;
+@use "../../utils/breakpoints" as *;
 
 .sites {
   margin: 120px 0;
@@ -25,4 +26,17 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .sites {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

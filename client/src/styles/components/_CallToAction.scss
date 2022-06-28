@@ -98,6 +98,10 @@
 */
 
 @include breakpoint(desktop) {
+  .call-to-action {
+    padding: 0 124px;
+  }
+
   .call-to-action__wrapper {
     max-width: 1112px;
     display: flex;

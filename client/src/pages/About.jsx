@@ -1,8 +1,5 @@
 import React from "react";
 import { ReactComponent as Background } from "../assets/about/mobile/bg-pattern-hero-about-mobile.svg";
-import ImgOne from "../assets/about/mobile/image-about-hero.jpg";
-import ImgTwo from "../assets/about/mobile/image-world-class-talent.jpg";
-import ImgThree from "../assets/about/mobile/image-real-deal.jpg";
 import { Sites } from "../components/UI";
 
 const About = () => {

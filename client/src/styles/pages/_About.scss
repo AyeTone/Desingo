@@ -16,8 +16,6 @@
 
   @include breakpoint(tablet) {
     padding: 64px 58px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
   }
 }
 
@@ -99,6 +97,11 @@
   }
 }
 
+.about__section {
+  width: 100%;
+  overflow: hidden;
+}
+
 /* 
 
     Tablet BP
@@ -109,20 +112,10 @@
   .about {
     display: grid;
     gap: 120px;
-
-    > * {
-      padding: 0px 40px;
-    }
-  }
-
-  .about__img--wrapper {
-    border-top-left-radius: 15px;
+    padding: 0px 40px;
   }
 
   .about__img {
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-
     &--about {
       background-image: url("assets/about/tablet/image-about-hero.jpg");
     }
@@ -131,6 +124,88 @@
     }
     &--real {
       background-image: url("assets/about/tablet/image-real-deal.jpg");
+    }
+  }
+}
+
+/* 
+
+
+      Desktop BP
+
+
+*/
+
+@include breakpoint(desktop) {
+  .about {
+    gap: 160px;
+    padding: 0 124px;
+  }
+
+  .about__section {
+    margin: 0 auto;
+    max-width: 1112px;
+    border-radius: 15px;
+  }
+
+  .about__section:nth-child(3n + 1) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about__section:nth-child(2) {
+    display: flex;
+  }
+
+  .about__img {
+    min-width: 476px;
+    height: 100%;
+
+    &--about {
+      height: 100%;
+      min-height: 480px;
+      background-image: url("assets/about/desktop/image-about-hero.jpg");
+    }
+
+    &--world {
+      height: 100%;
+      min-height: 714px;
+      background-image: url("assets/about/desktop/image-world-class-talent.jpg");
+    }
+
+    &--real {
+      height: 100%;
+      min-height: 640px;
+      background-image: url("assets/about/desktop/image-real-deal.jpg");
+    }
+  }
+
+  .about__about-us {
+    text-align: left;
+
+    &--title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &--para {
+      font-size: 16px;
+      line-height: 26px;
+      width: 80%;
+    }
+  }
+
+  .about__world-class {
+    text-align: left;
+
+    &--title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &--para {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 }
