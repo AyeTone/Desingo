@@ -1,25 +1,27 @@
 @use "../abstracts/variables" as *;
 @use "../utils/breakpoints" as *;
 
-.contact__content {
+.contact__container {
   position: relative;
   overflow: hidden;
-
   background-color: $mainBg;
-  color: white;
-
-  &--wrapper {
-    padding: 74px 24px;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
 
   &--bg {
     position: absolute;
     top: 0;
     right: 0;
   }
+}
+
+.contact__content {
+  padding: 74px 24px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.contact__text {
+  color: white;
 
   &--header {
     font-size: 32px;
@@ -86,10 +88,12 @@
     padding: 0 40px;
   }
 
-  .contact__content {
+  .contact__container {
     border-radius: 15px;
     padding: 88px 58px;
+  }
 
+  .contact__text {
     &--header {
       font-size: 48px;
       line-height: 48px;
@@ -103,5 +107,49 @@
 
   .contact__form--submit {
     align-self: flex-end;
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .contact {
+    padding: 0 124px;
+  }
+
+  .contact__container {
+    margin: 0 auto;
+    padding: 55px 96px;
+    max-width: 1112px;
+  }
+
+  .contact__content {
+    display: grid;
+    gap: 96px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact__text {
+    text-align: left;
+
+    &--header {
+      margin-top: 80px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  .contact__form--submit {
+    transition: all 300ms ease;
+
+    &:hover {
+      cursor: no-drop;
+      color: white;
+      background-color: $hover;
+    }
   }
 }

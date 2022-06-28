@@ -10,15 +10,17 @@ const Contact = () => {
 
   return (
     <main className="contact">
-      <div className="contact__content">
-        <div className="contact__content--wrapper">
-          <h2 className="contact__content--header">Contact Us</h2>
-          <p className="contact__content--para">
-            Ready to take it to the next level? Let’s talk about your project or
-            idea and find out how we can help your business grow. If you are
-            looking for unique digital experiences that’s relatable to your
-            users, drop us a line.
-          </p>
+      <div className="contact__container">
+        <div className="contact__content">
+          <div className="contact__text">
+            <h2 className="contact__text--header">Contact Us</h2>
+            <p className="contact__text--para">
+              Ready to take it to the next level? Let’s talk about your project
+              or idea and find out how we can help your business grow. If you
+              are looking for unique digital experiences that’s relatable to
+              your users, drop us a line.
+            </p>
+          </div>
           <form className="contact__form" onSubmit={(e) => deny(e)}>
             <input
               className="contact__form--input"
@@ -38,12 +40,12 @@ const Contact = () => {
             <textarea
               className="contact__form--input"
               placeholder="Your Message"
-              rows="7"
+              rows="5"
             ></textarea>
             <button className="contact__form--submit">Submit</button>
           </form>
         </div>
-        <Background className="contact__content--bg" />
+        <Background className="contact__container--bg" />
       </div>
       <Sites />
     </main>
