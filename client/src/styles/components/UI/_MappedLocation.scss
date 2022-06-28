@@ -1,6 +1,10 @@
 @use "../../abstracts/variables" as *;
 @use "../../utils/breakpoints" as *;
 
+.mapped-location {
+  width: 100%;
+}
+
 .mapped-location__img--wrapper {
   max-height: 320px;
 

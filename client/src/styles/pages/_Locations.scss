@@ -18,15 +18,15 @@
 .locations__location {
   &--canada {
     @include Bgimg;
-    background-image: url("assets/locations/desktop/image-map-canada.png");
+    background-image: url("assets/locations/tablet/image-map-canada.png");
   }
   &--australia {
     @include Bgimg;
-    background-image: url("assets/locations/desktop/image-map-australia.png");
+    background-image: url("assets/locations/tablet/image-map-australia.png");
   }
   &--united {
     @include Bgimg;
-    background-image: url("assets/locations/desktop/image-map-united-kingdom.png");
+    background-image: url("assets/locations/tablet/image-map-uk.png");
   }
 }
 
@@ -47,6 +47,39 @@
 
     > * {
       border-radius: 15px;
+    }
+  }
+}
+
+/* 
+
+      Desktop BP
+
+*/
+
+@include breakpoint(desktop) {
+  .locations__location {
+    display: flex;
+    width: 100%;
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
+
+    &--canada {
+      background-image: url("assets/locations/desktop/image-map-canada.png");
+    }
+
+    &--australia {
+      background-image: url("assets/locations/desktop/image-map-australia.png");
+    }
+    &--united {
+      background-image: url("assets/locations/desktop/image-map-united-kingdom.png");
+    }
+
+    &--canada,
+    &--australia,
+    &--united {
+      max-width: 350px;
     }
   }
 }
