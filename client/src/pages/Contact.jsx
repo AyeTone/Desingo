@@ -1,6 +1,7 @@
 import React from "react";
 import { Sites } from "../components/UI";
 import { ReactComponent as Background } from "../assets/shared/desktop/bg-pattern-two-circles.svg";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   function deny(e) {
@@ -10,7 +11,13 @@ const Contact = () => {
 
   return (
     <main className="contact">
-      <div className="contact__container">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="contact__container"
+      >
         <div className="contact__content">
           <div className="contact__text">
             <h2 className="contact__text--header">Contact Us</h2>
@@ -51,7 +58,7 @@ const Contact = () => {
           </form>
         </div>
         <Background className="contact__container--bg" />
-      </div>
+      </motion.div>
       <Sites />
     </main>
   );

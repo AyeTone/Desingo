@@ -1,11 +1,18 @@
 import React from "react";
 import { MappedLocation } from "../components/UI";
+import { motion } from "framer-motion";
 
 const Locations = () => {
   return (
     <main className="locations">
       <div className="locations__wrapper">
-        <div className="locations__location">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="locations__location"
+        >
           <div className="locations__location--canada"></div>
           <MappedLocation
             title="Canada"
@@ -15,8 +22,14 @@ const Locations = () => {
             phone="+1 253-863-8967"
             email="contact@designo.co"
           />
-        </div>
-        <div className="locations__location">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="locations__location"
+        >
           <div className="locations__location--australia"></div>
           <MappedLocation
             title="Australia"
@@ -26,8 +39,14 @@ const Locations = () => {
             phone="(02) 6720 9092"
             email="contact@designo.au"
           />
-        </div>
-        <div className="locations__location">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="locations__location"
+        >
           <div className="locations__location--united"></div>
           <MappedLocation
             title="United Kingdom"
@@ -37,7 +56,7 @@ const Locations = () => {
             phone="078 3115 1400"
             email="contact@designo.uk"
           />
-        </div>
+        </motion.div>
       </div>
     </main>
   );
