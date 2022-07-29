@@ -1,12 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as Background } from "../assets/shared/desktop/bg-pattern-call-to-action.svg";
+import { motion } from "framer-motion";
 
 const CallToAction = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="call-to-action">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="call-to-action"
+    >
       <div className="call-to-action__wrapper">
         <Background className="call-to-action__bg" />
         <div className="call-to-action__content">
@@ -25,7 +32,7 @@ const CallToAction = () => {
           Get in touch
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

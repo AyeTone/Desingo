@@ -1,0 +1,24 @@
+@use "../../abstracts/variables" as *;
+
+@keyframes loading {
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+    animation: loading 2s infinite both;
+  }
+}

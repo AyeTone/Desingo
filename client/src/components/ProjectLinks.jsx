@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as RightArrow } from "../assets/shared/desktop/icon-right-arrow.svg";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ProjectLinks = (props) => {
   const { isWeb, isApp, isGraphic, isHome } = props;
@@ -11,7 +12,11 @@ const ProjectLinks = (props) => {
       className={`project-links ${isHome ? "project-links__desktop" : ""} `}
     >
       {!isWeb && (
-        <figure
+        <motion.figure
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
           onClick={() => navigate("/webdesign")}
           className={`project-link ${isHome ? "project-link__desktop" : ""}`}
         >
@@ -24,10 +29,18 @@ const ProjectLinks = (props) => {
               </p>
             </div>
           </div>
-        </figure>
+        </motion.figure>
       )}
+
       {!isApp && (
-        <figure onClick={() => navigate("/appdesign")} className="project-link">
+        <motion.figure
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          onClick={() => navigate("/appdesign")}
+          className="project-link"
+        >
           <div className="project-link__img--app"></div>
           <div className="project-link__content--bg">
             <div className="project-link__content">
@@ -37,10 +50,14 @@ const ProjectLinks = (props) => {
               </p>
             </div>
           </div>
-        </figure>
+        </motion.figure>
       )}
       {!isGraphic && (
-        <figure
+        <motion.figure
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
           onClick={() => navigate("/graphicdesign")}
           className="project-link"
         >
@@ -53,7 +70,7 @@ const ProjectLinks = (props) => {
               </p>
             </div>
           </div>
-        </figure>
+        </motion.figure>
       )}
     </section>
   );

@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 
   return (
-    <section className="navbar">
+    <nav className="navbar">
       <Link to="/Designo/">
         <figure className="navbar__logo--wrapper">
           <img className="navbar__logo" src={Logo} alt="" />
@@ -33,31 +33,37 @@ const Navbar = () => {
         )}
         <div className="navbar__links--wrapper">
           <ul className="navbar__links">
-            <Link to="/about" onClick={toggleMenu}>
-              <li className="navbar__link">Our Company</li>
-            </Link>
-            <Link to="/locations" onClick={toggleMenu}>
-              <li className="navbar__link">Locations</li>
-            </Link>
-            <Link to="/contact" onClick={toggleMenu}>
-              <li className="navbar__link">Contact</li>
-            </Link>
+            <li className="navbar__link">
+              <Link to="/about" onClick={toggleMenu}>
+                Our Company
+              </Link>
+            </li>
+            <li className="navbar__link">
+              <Link to="/locations" onClick={toggleMenu}>
+                Locations
+              </Link>
+            </li>
+            <li className="navbar__link">
+              <Link to="/contact" onClick={toggleMenu}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
 
       <ul className="navbar__links navbar__tablet">
-        <Link to="/about">
-          <li className="navbar__link">Our Company</li>
-        </Link>
-        <Link to="/locations">
-          <li className="navbar__link">Locations</li>
-        </Link>
-        <Link to="/contact">
-          <li className="navbar__link">Contact</li>
-        </Link>
+        <li className="navbar__link">
+          <Link to="/about">Our Company</Link>
+        </li>
+        <li className="navbar__link">
+          <Link to="/locations">Locations</Link>
+        </li>
+        <li className="navbar__link">
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
-    </section>
+    </nav>
   );
 };
 

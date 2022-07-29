@@ -59,6 +59,10 @@
 }
 
 @include breakpoint(tablet) {
+  .navbar {
+    padding: 64px 40px;
+  }
+
   .navbar__tablet {
     display: flex;
   }
@@ -88,6 +92,10 @@
 */
 
 @include breakpoint(desktop) {
+  .navbar {
+    padding: 64px 124px;
+  }
+
   .navbar__link:hover {
     text-decoration: underline;
   }

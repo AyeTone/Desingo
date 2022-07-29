@@ -25,6 +25,7 @@
 @use "./components/Footer";
 
 //  UI
+@use "./components/UI/Loading";
 @use "./components/UI/Header";
 @use "./components/UI/Project";
 @use "./components/UI/SvgImage";

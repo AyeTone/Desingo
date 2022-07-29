@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { ReactComponent as Background } from "../assets/home/desktop/bg-pattern-hero-home.svg";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="hero"
+    >
       <div className="hero__wrapper">
         <Background className="hero__background--icon" />
         <div className="hero__content">
@@ -24,7 +31,7 @@ const Hero = () => {
           <div className="hero__phone"></div>
         </figure>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
