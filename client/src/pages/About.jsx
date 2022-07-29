@@ -1,11 +1,23 @@
 import React from "react";
 import { ReactComponent as Background } from "../assets/about/mobile/bg-pattern-hero-about-mobile.svg";
 import { Sites } from "../components/UI";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const animation = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
   return (
     <main className="about">
-      <div className="about__section">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={animation}
+        viewport={{ once: true }}
+        className="about__section"
+      >
         <figure className="about__img">
           <div className="about__img--about"></div>
         </figure>
@@ -22,8 +34,14 @@ const About = () => {
           </div>
           <Background className="about__bg" />
         </div>
-      </div>
-      <div className="about__section">
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={animation}
+        viewport={{ once: true }}
+        className="about__section"
+      >
         <firgure className="about__img">
           <div className="about__img--world"></div>
         </firgure>
@@ -46,9 +64,15 @@ const About = () => {
             <Background className="about__bg" />
           </div>
         </div>
-      </div>
+      </motion.div>
       <Sites />
-      <div className="about__section">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={animation}
+        viewport={{ once: true }}
+        className="about__section"
+      >
         <figure className="about__img">
           <div className="about__img--real"></div>
         </figure>
@@ -70,7 +94,7 @@ const About = () => {
             <Background className="about__bg" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };
